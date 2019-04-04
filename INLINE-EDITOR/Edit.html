@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>INLINE EDITOR</title>
+    <link rel="stylesheet" type="text/css" href="Edit.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+        
+
+<div id="Edit" v-cloak v-on:click="hideEditTool" >
+
+    <div class="EditTool"  v-on:click.stop v-if="show_EditTool" >
+
+        <input type="text" v-model="message" />
+    </div>
+
+    <p v-on:click.stop="EditTool"><i class="fa fa fa-pencil"></i> {{message}}</p>
+
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.5/vue.min.js"></script>
+<script src="Edit.js"></script>
+</body>
+</html>

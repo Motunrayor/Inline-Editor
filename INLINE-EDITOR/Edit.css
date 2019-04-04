@@ -1,0 +1,71 @@
+#Edit{
+    height:300px;
+    position:relative;
+    padding-top: 150px;
+    line-height: 40px;
+
+}
+
+body{
+    font:15px 'Century Gothic';
+    color: #f00;
+    text-align:center;
+    line-height: 40px;
+}
+
+a, a:visited {
+    outline:none;
+    color:#003300;
+}
+
+.EditTool{
+    background-color:#990000;
+    box-shadow: 0 2px 12px #bbc;
+    border-radius:3px;
+    width: 500px;
+    padding:5px;
+    position: absolute;
+    left:40%;
+    margin-left:-150px;
+    top: 80px;
+}
+
+.EditTool:after{
+    content:'showBelow';
+    position:absolute;
+    border:6px solid;
+    border-color: #b7b2ac transparent transparent;
+    width:0;
+    height:0;
+    bottom:-12px;
+    left:50%;
+    margin-left:-6px;
+}
+
+.EditTool input{
+    border: none;
+    width: 100%;
+    line-height: 34px;
+    border-radius: 4px;
+    box-shadow: 0 5px 6px black inset;
+    text-align: center;
+    font-size: 15px;
+    font-family: inherit;
+    color: #009;
+    font-weight: bold;
+    outline: none;
+}
+
+p{
+    font-size:20px;
+    font-weight:inherit;
+    color:#1a001a;
+    height: 30px;
+    cursor:default;
+    word-spacing: 2px;
+    line-height: 70px;
+}
+
+
+
+
